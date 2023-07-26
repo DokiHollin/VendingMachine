@@ -1,0 +1,7 @@
+Username,Password,Role
+H,1,Customer
+B,1,Seller
+T,1,Cashier
+L,1,Owner
+1234,1234,Customer
+qwer,qwer,Customer

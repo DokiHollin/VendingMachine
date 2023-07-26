@@ -1,0 +1,88 @@
+plugins {
+    // Apply the application plugin to add support for building a CLI application in Java.
+    id 'application'
+    id 'jacoco'
+    id 'java'
+}
+
+//apply plugin: 'groovy'
+//apply plugin: 'maven-publish'
+
+repositories {
+    // Use Maven Central for resolving dependencies.
+    mavenCentral()
+}
+
+dependencies {
+    // Use JUnit Jupiter for testing.
+    testImplementation 'org.junit.jupiter:junit-jupiter:5.7.2'
+
+    // This dependency is used by the application.
+    implementation 'com.google.guava:guava:30.1.1-jre'
+    implementation 'com.googlecode.json-simple:json-simple:1.1.1'
+//    implementation localGroovy()
+//    implementation gradleApi()
+}
+
+application {
+    // Define the main class for the application.
+    mainClass = 'App.App'
+}
+
+//task say{
+//    println 'build is over'
+//}
+
+tasks.named('test') {
+    // Use JUnit Platform for unit tests.
+    useJUnitPlatform()
+    test.finalizedBy jacocoTestReport
+}
+
+build {
+    dependsOn(clean)
+    println 'build is over'
+}
+
+
+jar {
+    manifest {
+        attributes(
+                "Main-Class": 'App'
+        )
+    }
+}
+
+test {
+    useJUnitPlatform()
+    test.finalizedBy jacocoTestReport // <- add this line
+
+}
+
+jacocoTestReport {
+    reports {
+        html.required = true
+        csv.required = true
+
+    }
+}
+
+task customJar(type:Jar){
+    archiveFileName = 'hello.jar'
+    destinationDir = file('build/libs')
+}
+//
+//uploadArchives{
+//    repositories{
+//        flatDir{
+//            dirs 'build/libs'
+//        }
+//    }
+//}
+//publishing{
+//    respositories{
+//        maven{
+//            url = uri('./../repo')
+//        }
+//    }
+//}
