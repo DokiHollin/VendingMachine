@@ -28,6 +28,6 @@ Zechao Sun      510048657
     2. The vending machine do not have too many cash, so please don't fill too many cash when you pay for your orders.
     3. The input of your cash will be spearate automatically, eg: enter 12 dollars will be a seperate as 1x10 dollars and
        2x1 dollars automatically.
-<img width="361" alt="屏幕截图 2023-07-27 012216" src="https://github.com/DokiHollin/CurrencyExchanger/assets/93866170/5d3b144a-06c1-4ebd-8eb8-358ddbf98165">
-<img width="357" alt="屏幕截图 2023-07-27 012200" src="https://github.com/DokiHollin/CurrencyExchanger/assets/93866170/3c967946-f934-42be-a1b2-cbd0643f97ed">
-<img width="359" alt="屏幕截图 2023-07-27 012234" src="https://github.com/DokiHollin/CurrencyExchanger/assets/93866170/a3b0bb2c-4b9d-43f7-a86b-ea2c1988f94c">
+
+<img width="587" alt="屏幕截图 2023-07-27 012939" src="https://github.com/DokiHollin/CurrencyExchanger/assets/93866170/03d4450a-5f2f-4725-a239-3246397bd24b">
+<img width="609" alt="屏幕截图 2023-07-27 013012" src="https://github.com/DokiHollin/CurrencyExchanger/assets/93866170/5016a0bf-759e-4160-9e6b-64c8ce5b73cb">
