@@ -31,7 +31,7 @@ Zechao Sun      510048657
 ## Tools More specific about the agile development are in the report
     1. Jeinks for CI/CD
     2. Jira Board
-    <img width="1277" alt="屏幕截图 2023-07-27 020022" src="https://github.com/DokiHollin/VendingMachine/assets/93866170/288c081d-159c-4114-93b5-6fedc85b3d10">
+<img width="1277" alt="屏幕截图 2023-07-27 020022" src="https://github.com/DokiHollin/VendingMachine/assets/93866170/288c081d-159c-4114-93b5-6fedc85b3d10">
     
 
 
